@@ -22,6 +22,8 @@ To solve this issuse, this repo contains small code written in python using it's
 
 ### Now your code is ready to run, add action of running it in windows task scheduler [Kepper.py](Keeper.py) file.
 
+To know how to add task to task scheduler in windows follows this [link.](https://youtu.be/n2Cr_YRQk7o)
+
 This helps you atleast relax in between classes without hurriedly marking attendance😎😎😎
 
 ### How it works?
