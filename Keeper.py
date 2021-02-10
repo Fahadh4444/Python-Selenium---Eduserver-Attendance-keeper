@@ -35,7 +35,6 @@ driver.implicitly_wait(5)
 driver.find_element_by_link_text('Go to activity').click()
 driver.implicitly_wait(3)
 
-
 while(a):
     if(b):
         time.sleep(2)
