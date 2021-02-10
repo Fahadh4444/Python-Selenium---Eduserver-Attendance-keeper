@@ -23,3 +23,10 @@ To solve this issuse, this repo small code written in python using it's Selenium
 ### Now your code is ready to run, Open terminal or GIT Bash in repo and run [Kepper.py](Keeper.py) file.
 
 This helps you atleast relax in between classes without hurriedly marking attendance😎😎😎
+
+### How it works?
+
+- It opens up chrome browser and get you to eduserver login page.
+- Then fill the form and login to it.
+- Now it check for first attendance link and opens it.
+- If we have Submit attendance option then opens it and mark attendance and closes itself, else it refreshes page for every 5 seconds and check for the Submit attendance option.
