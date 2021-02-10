@@ -20,7 +20,7 @@ To solve this issuse, this repo contains small code written in python using it's
   - Fill your username in place of username as shown in photo below.
   - Do it same for your password too.
 
-### Now your code is ready to run, Open terminal or GIT Bash in repo and run [Kepper.py](Keeper.py) file.
+### Now your code is ready to run, add action of running it in windows task scheduler [Kepper.py](Keeper.py) file.
 
 This helps you atleast relax in between classes without hurriedly marking attendance😎😎😎
 
