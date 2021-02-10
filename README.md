@@ -2,18 +2,18 @@
 
 Hi guys,  
 This is Fahadh,  
-Yeah I know now a days its becaming hard to mark attendance in eduserver, due to our neglegence or some other at home it misses sometimes in just seconds.  
-To solve this issuse, this repo small code written in python using it's Selenium package.
+Yeah I know now a days its becaming hard to mark attendance in eduserver, due to our neglegence or some other work at home, it misses sometimes in just seconds.  
+To solve this issuse, this repo contains small code written in python using it's Selenium package.
 
 ### After downloading this repo all have to do some steps in order to run it properly
 
 - Install selenium package in our pc
-  - using command  
+  - using command in cdm terminal or in GIT Bash  
     <code><b>pip install selenium</b></code>
-- Then you have to download web driver for chrome  
+- Then you have to download web driver for chrome.  
   Follow this link to [download it.](https://sites.google.com/a/chromium.org/chromedriver/)  
-  `NOTE: Download Chrome webdriver which supports your PC's Chrome brower.`
-- After this unzip downloaded file, copy chromewebdriver.exe, paste some where in PC except in C drive and copy it's path(address).
+  `NOTE: Download Chrome webdriver which supports your PC's Chrome brower(by check your browser current version).`
+- After this unzip downloaded folder, copy chromewebdriver.exe, paste some where in PC except in C drive and copy it's path(address).
 - Now open our repo in code editor to make some changes in code
   ![alt text](requiredChanges.PNG)
   - Change path to path where you pasted web driver and add "\chromedriver.exe" at the end if required.
