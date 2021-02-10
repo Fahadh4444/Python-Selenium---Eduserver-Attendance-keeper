@@ -15,9 +15,9 @@ url = 'https://eduserver.nitc.ac.in/login/index.php'
 driver.get(url)
 
 
-driver.find_element_by_xpath('//*[@id="username"]').send_keys('b190853cs')
+driver.find_element_by_xpath('//*[@id="username"]').send_keys('username')
 driver.find_element_by_xpath(
-    '//*[@id="password"]').send_keys('Phoenix@25')
+    '//*[@id="password"]').send_keys('password')
 driver.find_element_by_xpath(
     '/html/body/div[1]/div[2]/div/section/div[2]/div[2]/div[1]/div/div[2]/form/div[3]/button').click()
 
