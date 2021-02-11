@@ -15,17 +15,12 @@ url = 'https://eduserver.nitc.ac.in/login/index.php'
 driver.get(url)
 
 
-driver.find_element_by_xpath('//*[@id="username"]').send_keys('username')
+driver.find_element_by_xpath('//*[@id="username"]').send_keys('b190853cs')
 driver.find_element_by_xpath(
-    '//*[@id="password"]').send_keys('password')
+    '//*[@id="password"]').send_keys('Phoenix@25')
 driver.find_element_by_xpath(
     '/html/body/div[1]/div[2]/div/section/div[2]/div[2]/div[1]/div/div[2]/form/div[3]/button').click()
 
-a = 1
-b = 0
-list = driver.find_elements_by_link_text('Submit attendance')
-if(list != []):
-    b = 1
 
 driver.implicitly_wait(10)
 time.sleep(3)
@@ -35,14 +30,20 @@ driver.implicitly_wait(5)
 driver.find_element_by_link_text('Go to activity').click()
 driver.implicitly_wait(3)
 
+a = 1
+b = 0
+list = driver.find_elements_by_link_text('Submit attendance')
+if(list != []):
+    b = 1
+
 while(a):
     if(b):
         time.sleep(2)
         driver.find_element_by_link_text('Submit attendance').click()
         time.sleep(2)
         driver.implicitly_wait(2)
-        driver.find_element_by_xpath('//*[@id="id_status_3318"]').click()
-        driver.find_element_by_xpath('//*[@id="id_submitbutton"]').click()
+        driver.find_elements_by_class_name('statusdesc')[0].click()
+        driver.find_element_by_name('submitbutton').click()
         a = 0
     else:
         driver.implicitly_wait(1)
