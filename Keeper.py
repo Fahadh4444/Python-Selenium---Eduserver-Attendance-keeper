@@ -21,7 +21,6 @@ driver.find_element_by_xpath(
 driver.find_element_by_xpath(
     '/html/body/div[1]/div[2]/div/section/div[2]/div[2]/div[1]/div/div[2]/form/div[3]/button').click()
 
-
 driver.implicitly_wait(10)
 time.sleep(3)
 driver.find_element_by_partial_link_text('Attendance').click()
