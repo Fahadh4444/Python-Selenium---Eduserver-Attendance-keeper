@@ -21,6 +21,7 @@ driver.find_element_by_xpath(
 driver.find_element_by_xpath(
     '/html/body/div[1]/div[2]/div/section/div[2]/div[2]/div[1]/div/div[2]/form/div[3]/button').click()
 
+
 driver.implicitly_wait(10)
 time.sleep(3)
 driver.find_element_by_partial_link_text('Attendance').click()
@@ -43,10 +44,14 @@ while(a):
         driver.implicitly_wait(2)
         driver.find_elements_by_class_name('statusdesc')[0].click()
         driver.find_element_by_name('submitbutton').click()
+        time.sleep(2)
         a = 0
     else:
         driver.implicitly_wait(1)
         time.sleep(5)
         driver.refresh()
+        list = driver.find_elements_by_link_text('Submit attendance')
+        if(list != []):
+            b = 1
 
 driver.close()
