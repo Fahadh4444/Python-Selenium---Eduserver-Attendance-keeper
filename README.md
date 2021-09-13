@@ -1,3 +1,4 @@
+# Eduserver Attendence Keeper Using Python Selenium
 Hey guys, Nowadays it has become hard to mark attendance in Eduserver, due to our negligence or some other works we have, someties we miss it in just seconds. I have a solution for that, this repo contains Python code that automates marking attendence in Eduserver.
 
 ### **After downloading this repo all have to do some steps in order to run it properly**
