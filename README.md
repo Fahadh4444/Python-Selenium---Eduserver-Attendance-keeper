@@ -1,34 +1,30 @@
-# Python-Selenium---Eduserver-Attendance-keeper
+Hey guys, Nowadays it has become hard to mark attendance in Eduserver, due to our negligence or some other works we have, someties we miss it in just seconds. I have a solution for that, this repo contains Python code that automates marking attendence in Eduserver.
 
-Hi guys,  
-This is Fahadh,  
-Yeah I know now a days its becaming hard to mark attendance in eduserver, due to our neglegence or some other work at home, it misses sometimes in just seconds.  
-To solve this issuse, this repo contains small code written in python using it's Selenium package.
-
-### After downloading this repo all have to do some steps in order to run it properly
+### **After downloading this repo all have to do some steps in order to run it properly**
 
 - Install selenium package in our pc
-  - using command in cdm terminal or in GIT Bash  
-    <code><b>pip install selenium</b></code>
-- Then you have to download web driver for chrome.  
-  Follow this link to [download it.](https://sites.google.com/a/chromium.org/chromedriver/)  
-  `NOTE: Download Chrome webdriver which supports your PC's Chrome brower(by check your browser current version).`
-- After this unzip downloaded folder, copy chromewebdriver.exe, paste some where in PC except in C drive and copy it's path(address).
-- Now open our repo in code editor to make some changes in code
-  ![alt text](requiredChanges.PNG)
-  - Change path to path where you pasted web driver and add "\chromedriver.exe" at the end if required.
-  - Fill your username in place of username as shown in photo below.
-  - Do it same for your password too.
+- using the command in cmd terminal or in GIT Bash `pip install selenium`
+- Then you have to download the web driver for chrome. Follow this link to [download it.](https://sites.google.com/a/chromium.org/chromedriver/)
+  
+  `NOTE: Download Chrome webdriver which supports your PC's Chrome browser(by check your browser current version).`
+- After unzipping the downloaded folder, copy chromewebdriver.exe, paste somewhere in PC except in C drive and copy its path(address).
+- Now open our repo in the code editor to make some changes in the code
 
-### Now your code is ready to run, add action of running it in windows task scheduler [Kepper.py](Keeper.py) file.
+    ![https://github.com/ShyamKumar1/Python-Selenium---Eduserver-Attendance-keeper/raw/main/requiredChanges.PNG](https://github.com/ShyamKumar1/Python-Selenium---Eduserver-Attendance-keeper/raw/main/requiredChanges.PNG)
 
-To know how to add task to task scheduler in windows follows this [link.](https://youtu.be/n2Cr_YRQk7o)
+- Change path to path where you pasted web driver and add "\chromedriver.exe" at the end if required.
+- Fill your username in place of username as shown in the photo below.
+- Do it same for your password too.
 
-This helps you atleast relax in between classes without hurriedly marking attendance😎😎😎
+### **Now your code is ready to run, add an action of running it in the windows task scheduler [Keeper.py](https://github.com/ShyamKumar1/Python-Selenium---Eduserver-Attendance-keeper/blob/main/Keeper.py) file.**
 
-### How it works?
+To know how to add a task to the task scheduler in windows follows this [link.](https://youtu.be/n2Cr_YRQk7o)
 
-- It opens up chrome browser and get you to eduserver login page.
-- Then fill the form and login to it.
-- Now it check for first attendance link and opens it.
-- If we have Submit attendance option then opens it and mark attendance and closes itself, else it refreshes page for every 5 seconds and check for the Submit attendance option.
+This helps you at least relax in between classes without hurriedly marking attendance😎😎😎
+
+### **How does it work?**
+
+- It opens up the chrome browser and gets you to eduserver login page.
+- Then fill the form and log in to it.
+- Now it checks for the first attendance link and opens it.
+- If we have to Submit attendance option then opens it and mark attendance and closes itself, else it refreshes the page every 5 seconds and checks for the Submit attendance option.
